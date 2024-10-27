@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvRa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="67dp"
+        android:text="@string/ra"
+        app:layout_constraintBottom_toTopOf="@+id/spFilmes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNome" />
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/nome"
+        app:layout_constraintBottom_toTopOf="@+id/tvRa"
+        app:layout_constraintEnd_toEndOf="@+id/tvRa"
+        app:layout_constraintStart_toEndOf="@+id/tvRa"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgTipoIngresso"
+        android:layout_width="179dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/spQuantIngresso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spFilmes"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbIngressoComum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbIngressoComum" />
+
+        <RadioButton
+            android:id="@+id/rbIngressoVip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbIngressoVip" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spQuantIngresso"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="439dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rgTipoIngresso"
+        app:layout_constraintStart_toStartOf="@+id/rgTipoIngresso"
+        app:layout_constraintTop_toBottomOf="@+id/rgTipoIngresso" />
+
+    <Spinner
+        android:id="@+id/spFilmes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="231dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnComprar"
+        app:layout_constraintEnd_toStartOf="@+id/rgTipoIngresso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRa" />
+
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="258dp"
+        android:text="@string/btnComprar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spFilmes" />
+</androidx.constraintlayout.widget.ConstraintLayout>

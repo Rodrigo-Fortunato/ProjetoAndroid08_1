@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProjetoAndroid08_1</string>
+    <string name="nome">Rodrigo Fortunato Martins Neves</string>
+    <string name="ra">1110482313035</string>
+    <string name="btnComprar">Comprar</string>
+    <string name="rbIngressoComum">Ingresso Comum</string>
+    <string name="rbIngressoVip">Ingresso VIP</string>
+    <string name="btnVoltar">Voltar</string>
+</resources>
