@@ -18,7 +18,9 @@ import br.edu.fateczl.projetoandroid08_1.model.Ingresso;
 import br.edu.fateczl.projetoandroid08_1.model.IngressoVip;
 
 public class DadosCompra extends AppCompatActivity {
-
+    /*
+     *@author:<Rodrigo Fortunato Martins Neves>
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
